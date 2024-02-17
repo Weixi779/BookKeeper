@@ -12,21 +12,9 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Button("Chosse File") {
-                chooseFile()
-            }
-        }
-    }
-    
-    func chooseFile() {
-        let panel = NSOpenPanel()
-        panel.allowsMultipleSelection = false
-        panel.canChooseDirectories = false
-        panel.canChooseFiles = true
-        panel.allowedContentTypes = [.commaSeparatedText]
-
-        if panel.runModal() == .OK {
-            if let url = panel.urls.first {
-                test(url)
+                if let fileUrl = FileUtils.chooseCSVFile() {
+                    test(fileUrl)
+                }
             }
         }
     }

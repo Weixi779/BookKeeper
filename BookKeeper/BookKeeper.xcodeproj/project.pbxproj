@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		607EE3CF2B80EAE10047FD66 /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607EE3CE2B80EAE10047FD66 /* FileUtils.swift */; };
 		60E7BA972B7CFA99002871BE /* BookKeeperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7BA962B7CFA99002871BE /* BookKeeperApp.swift */; };
 		60E7BA992B7CFA99002871BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7BA982B7CFA99002871BE /* ContentView.swift */; };
 		60E7BA9B2B7CFA9D002871BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E7BA9A2B7CFA9D002871BE /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		607EE3CE2B80EAE10047FD66 /* FileUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
 		60E7BA932B7CFA99002871BE /* BookKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E7BA962B7CFA99002871BE /* BookKeeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookKeeperApp.swift; sourceTree = "<group>"; };
 		60E7BA982B7CFA99002871BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				60E7BA962B7CFA99002871BE /* BookKeeperApp.swift */,
 				60E7BA982B7CFA99002871BE /* ContentView.swift */,
+				607EE3CE2B80EAE10047FD66 /* FileUtils.swift */,
 				60E7BA9A2B7CFA9D002871BE /* Assets.xcassets */,
 				60E7BA9F2B7CFA9D002871BE /* BookKeeper.entitlements */,
 				60E7BA9C2B7CFA9D002871BE /* Preview Content */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				607EE3CF2B80EAE10047FD66 /* FileUtils.swift in Sources */,
 				60E7BA992B7CFA99002871BE /* ContentView.swift in Sources */,
 				60E7BA972B7CFA99002871BE /* BookKeeperApp.swift in Sources */,
 			);
