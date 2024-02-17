@@ -6,16 +6,39 @@
 //
 
 import SwiftUI
+import SwiftCSV
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button("Chosse File") {
+                chooseFile()
+            }
         }
-        .padding()
+    }
+    
+    func chooseFile() {
+        let panel = NSOpenPanel()
+        panel.allowsMultipleSelection = false
+        panel.canChooseDirectories = false
+        panel.canChooseFiles = true
+        panel.allowedContentTypes = [.commaSeparatedText]
+
+        if panel.runModal() == .OK {
+            if let url = panel.urls.first {
+                test(url)
+            }
+        }
+    }
+    
+    func test(_ url: URL) {
+        do {
+            let csv = try CSV<Named>(url: url)
+            print(csv.rows.count)
+            print(csv.columns?.count)
+        } catch {
+            print(error.localizedDescription)
+        }
     }
 }
 
