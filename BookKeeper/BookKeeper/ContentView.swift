@@ -21,9 +21,10 @@ struct ContentView: View {
     
     func test(_ url: URL) {
         do {
-            let csv = try CSV<Named>(url: url)
-            print(csv.rows.count)
-            print(csv.columns?.count)
+            let csv = try EnumeratedCSV(url: url)
+            let accounts: [[String]] = Array(csv.rows.dropFirst(17))
+            var records = accounts.map { Record(data: $0) }
+            records.forEach { print($0) }
         } catch {
             print(error.localizedDescription)
         }
