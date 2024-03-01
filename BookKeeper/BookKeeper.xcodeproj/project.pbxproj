@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		607EE3CF2B80EAE10047FD66 /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607EE3CE2B80EAE10047FD66 /* FileUtils.swift */; };
 		607EE3D12B81CD820047FD66 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607EE3D02B81CD820047FD66 /* Record.swift */; };
+		6099E28B2B922CD00005AE35 /* Persisted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6099E28A2B922CD00005AE35 /* Persisted.swift */; };
 		60E7BA972B7CFA99002871BE /* BookKeeperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7BA962B7CFA99002871BE /* BookKeeperApp.swift */; };
 		60E7BA992B7CFA99002871BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7BA982B7CFA99002871BE /* ContentView.swift */; };
 		60E7BA9B2B7CFA9D002871BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E7BA9A2B7CFA9D002871BE /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		607EE3CE2B80EAE10047FD66 /* FileUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
 		607EE3D02B81CD820047FD66 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		6099E28A2B922CD00005AE35 /* Persisted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persisted.swift; sourceTree = "<group>"; };
 		60E7BA932B7CFA99002871BE /* BookKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E7BA962B7CFA99002871BE /* BookKeeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookKeeperApp.swift; sourceTree = "<group>"; };
 		60E7BA982B7CFA99002871BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				60E7BA9F2B7CFA9D002871BE /* BookKeeper.entitlements */,
 				60E7BA9C2B7CFA9D002871BE /* Preview Content */,
 				607EE3D22B81CD8C0047FD66 /* Model */,
+				6099E28A2B922CD00005AE35 /* Persisted.swift */,
 			);
 			path = BookKeeper;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				607EE3D12B81CD820047FD66 /* Record.swift in Sources */,
 				60E7BA992B7CFA99002871BE /* ContentView.swift in Sources */,
 				60E7BA972B7CFA99002871BE /* BookKeeperApp.swift in Sources */,
+				6099E28B2B922CD00005AE35 /* Persisted.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 import Foundation
 
 /// 交易流向
-enum TradeFlow {
+enum TradeFlow: Codable {
     /// 支出
     case expenditure
     /// 收入
@@ -18,7 +18,7 @@ enum TradeFlow {
 }
 
 /// 交易记录
-struct Record {
+struct Record: Codable {
     /// 交易时间
     let time: Date?
     /// 交易类型
