@@ -15,22 +15,21 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Button("Chosse File") {
-                if let fileUrl = FileUtils.chooseCSVFile() {
-                    test(fileUrl)
-                }
+                let files = FileUtils.chooseCSVFiles()
+                var records = files.map{ parseCSV($0) }
             }
         }
     }
     
-    func test(_ url: URL) {
+    func parseCSV(_ url: URL) -> [Record] {
         do {
             let csv = try EnumeratedCSV(url: url)
             let accounts: [[String]] = Array(csv.rows.dropFirst(17))
-            let records = accounts.map { Record(data: $0) }
-            records.forEach { print($0) }
+            return accounts.map { Record(data: $0) }
         } catch {
             print(error.localizedDescription)
         }
+        return []
     }
 }
 

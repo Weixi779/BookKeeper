@@ -9,7 +9,7 @@ import AppKit
 import Foundation
 
 struct FileUtils {
-    static func chooseCSVFile() -> URL? {
+    static func chooseCSVFiles() -> [URL] {
         let panel = NSOpenPanel()
         panel.allowsMultipleSelection = false
         panel.canChooseDirectories = false
@@ -17,10 +17,8 @@ struct FileUtils {
         panel.allowedContentTypes = [.commaSeparatedText]
 
         if panel.runModal() == .OK {
-            if let url = panel.urls.first {
-                return url
-            }
+            return panel.urls
         }
-        return nil
+        return []
     }
 }
