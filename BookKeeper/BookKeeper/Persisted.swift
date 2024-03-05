@@ -36,3 +36,23 @@ struct Persisted<Value: Codable> {
         }
     }
 }
+
+extension Encodable {
+    func save(withKey key: String? = nil) {
+        if let encoded = try? JSONEncoder().encode(self) {
+            let setKey = key ?? "UserDefaults-\(String(describing: self))"
+            UserDefaults.standard.set(encoded, forKey: setKey)
+        }
+    }
+}
+
+extension Decodable {
+    static func load<T: Codable>(withKey key: String? = nil) -> T? {
+        let dataKey = key ?? "UserDefaults-\(String(describing: self))"
+        guard let data = UserDefaults.standard.data(forKey: dataKey),
+              let value = try? JSONDecoder().decode(T.self, from: data) else {
+            return nil
+        }
+        return value
+    }
+}
