@@ -20,3 +20,9 @@ class RecordsModel {
         self.records = [Record].load() ?? []
     }
 }
+
+extension RecordsModel {
+    var isRecordsEmpty: Bool {
+        return self.records.isEmpty
+    }
+}

@@ -11,8 +11,9 @@
 		607EE3D12B81CD820047FD66 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607EE3D02B81CD820047FD66 /* Record.swift */; };
 		6099E28B2B922CD00005AE35 /* Persisted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6099E28A2B922CD00005AE35 /* Persisted.swift */; };
 		6099E28D2B933E8C0005AE35 /* RecordsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6099E28C2B933E8C0005AE35 /* RecordsModel.swift */; };
+		60D8DE202BA0A1240021F7E2 /* SelectFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D8DE1F2BA0A1240021F7E2 /* SelectFileView.swift */; };
 		60E7BA972B7CFA99002871BE /* BookKeeperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7BA962B7CFA99002871BE /* BookKeeperApp.swift */; };
-		60E7BA992B7CFA99002871BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7BA982B7CFA99002871BE /* ContentView.swift */; };
+		60E7BA992B7CFA99002871BE /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E7BA982B7CFA99002871BE /* ChartView.swift */; };
 		60E7BA9B2B7CFA9D002871BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E7BA9A2B7CFA9D002871BE /* Assets.xcassets */; };
 		60E7BA9E2B7CFA9D002871BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E7BA9D2B7CFA9D002871BE /* Preview Assets.xcassets */; };
 		60E7BAA72B7CFB2C002871BE /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 60E7BAA62B7CFB2C002871BE /* SwiftCSV */; };
@@ -23,9 +24,10 @@
 		607EE3D02B81CD820047FD66 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		6099E28A2B922CD00005AE35 /* Persisted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persisted.swift; sourceTree = "<group>"; };
 		6099E28C2B933E8C0005AE35 /* RecordsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsModel.swift; sourceTree = "<group>"; };
+		60D8DE1F2BA0A1240021F7E2 /* SelectFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFileView.swift; sourceTree = "<group>"; };
 		60E7BA932B7CFA99002871BE /* BookKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60E7BA962B7CFA99002871BE /* BookKeeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookKeeperApp.swift; sourceTree = "<group>"; };
-		60E7BA982B7CFA99002871BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		60E7BA982B7CFA99002871BE /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		60E7BA9A2B7CFA9D002871BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60E7BA9D2B7CFA9D002871BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		60E7BA9F2B7CFA9D002871BE /* BookKeeper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BookKeeper.entitlements; sourceTree = "<group>"; };
@@ -71,7 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				60E7BA962B7CFA99002871BE /* BookKeeperApp.swift */,
-				60E7BA982B7CFA99002871BE /* ContentView.swift */,
+				60E7BA982B7CFA99002871BE /* ChartView.swift */,
+				60D8DE1F2BA0A1240021F7E2 /* SelectFileView.swift */,
 				6099E28C2B933E8C0005AE35 /* RecordsModel.swift */,
 				607EE3CE2B80EAE10047FD66 /* FileUtils.swift */,
 				60E7BA9A2B7CFA9D002871BE /* Assets.xcassets */,
@@ -170,7 +173,8 @@
 				607EE3CF2B80EAE10047FD66 /* FileUtils.swift in Sources */,
 				607EE3D12B81CD820047FD66 /* Record.swift in Sources */,
 				6099E28D2B933E8C0005AE35 /* RecordsModel.swift in Sources */,
-				60E7BA992B7CFA99002871BE /* ContentView.swift in Sources */,
+				60E7BA992B7CFA99002871BE /* ChartView.swift in Sources */,
+				60D8DE202BA0A1240021F7E2 /* SelectFileView.swift in Sources */,
 				60E7BA972B7CFA99002871BE /* BookKeeperApp.swift in Sources */,
 				6099E28B2B922CD00005AE35 /* Persisted.swift in Sources */,
 			);

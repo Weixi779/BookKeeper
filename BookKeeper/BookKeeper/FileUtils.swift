@@ -11,7 +11,7 @@ import Foundation
 struct FileUtils {
     static func chooseCSVFiles() -> [URL] {
         let panel = NSOpenPanel()
-        panel.allowsMultipleSelection = false
+        panel.allowsMultipleSelection = true
         panel.canChooseDirectories = false
         panel.canChooseFiles = true
         panel.allowedContentTypes = [.commaSeparatedText]

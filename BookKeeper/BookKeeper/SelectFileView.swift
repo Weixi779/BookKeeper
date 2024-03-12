@@ -1,22 +1,22 @@
 //
-//  ContentView.swift
+//  SelectFileView.swift
 //  BookKeeper
 //
-//  Created by 孙世伟 on 2024/2/14.
+//  Created by 孙世伟 on 2024/3/12.
 //
 
 import SwiftUI
 import SwiftCSV
 
-struct ContentView: View {
-    @Persisted(defalutValue: [Record]())
-    var records: [Record]
+struct SelectFileView: View {
+    let viewModel: RecordsModel
     
     var body: some View {
         VStack {
             Button("Chosse File") {
                 let files = FileUtils.chooseCSVFiles()
-                var records = files.map{ parseCSV($0) }
+                let records = files.flatMap{ parseCSV($0) }
+                viewModel.records = records
             }
         }
     }
@@ -31,8 +31,4 @@ struct ContentView: View {
         }
         return []
     }
-}
-
-#Preview {
-    ContentView()
 }

@@ -18,7 +18,8 @@ enum TradeFlow: Codable {
 }
 
 /// 交易记录
-struct Record: Codable {
+struct Record: Codable, Hashable {
+    var id = UUID()
     /// 交易时间
     let time: Date?
     /// 交易类型
@@ -66,6 +67,12 @@ struct Record: Codable {
         self.tradeId = data[8].trimmedTab
         self.merchantId = data[9].trimmedTab
         self.note = data[10]
+    }
+}
+
+extension Record {
+    var amoutString: String {
+        return String(format: "%.2f", self.amount)
     }
 }
 

@@ -11,7 +11,7 @@ import SwiftUI
 struct BookKeeperApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ChartView()
         }
     }
 }
