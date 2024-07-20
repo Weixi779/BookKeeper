@@ -21,17 +21,29 @@ struct ChartView: View {
             if viewModel.isRecordsEmpty {
                 SelectFileView(viewModel: viewModel)
             } else {
+                VStack(alignment: .leading) {
+                    Text("总流通:\(viewModel.totalCirculation)")
+                    Text("总支出:\(viewModel.totalExpenditure)")
+                    Text("总收入:\(viewModel.totalIncome)")
+                    Text("总收益:\(viewModel.totalAmount)")
+                }
+                .bold()
+                .padding()
+                Divider()
+                
+                HStack {
+                    Spacer()
+                    
+                }
+                .padding()
+                
                 ScrollView {
                     LazyVGrid(columns: columns) {
-                        ForEach(viewModel.records, id: \.self) { record in
-                            Text("\(record.amoutString)")
-                                .padding()
-                                .frame(maxWidth: .infinity, minHeight: 50)
-                                .background(Color.gray.opacity(0.2))
-                                .cornerRadius(10)
+                        ForEach(viewModel.displayRecords, id: \.self) { record in
+                            ScrollItemView(record: record)
                         }
                     }
-                    .padding(.horizontal)
+                    .padding()
                 }
             }
         }

@@ -15,6 +15,14 @@ enum TradeFlow: Codable {
     case income
     /// 流通
     case circulation
+    
+    var detail: String {
+        switch self {
+        case .expenditure: "支出"
+        case .income: "收入"
+        case .circulation: "流通"
+        }
+    }
 }
 
 /// 交易记录
